@@ -7,10 +7,34 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "a6b6f85116fc55e4a7c83d66973035a7",
+      "css": "logout",
+      "code": 61485,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "7336247ba3db350dec8d6c0a47cef966",
+      "css": "cog",
+      "code": 59392,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "5adef5b3275fcd874b0815a0637c5800",
+      "css": "login",
+      "code": 61484,
+      "src": "mfglabs"
+    },
+    {
       "uid": "d2c6b59d9a239140cb76be0627480855",
       "css": "dot",
-      "code": 59392,
+      "code": 59393,
       "src": "entypo"
+    },
+    {
+      "uid": "018571e697f22ca41803de480e10ed10",
+      "css": "home",
+      "code": 59394,
+      "src": "mfglabs"
     }
   ]
 }
