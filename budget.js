@@ -10,8 +10,8 @@ function setSlide(slidenr){
 		
 		number = slidenr-1;
 		
-	//	hide();
-	//	setTimeout("changeSlide()", 500);
+		hide();
+		setTimeout("changeSlide()", 500);
 }
 
 function hide(){
