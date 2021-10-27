@@ -2,8 +2,6 @@ var number = Math.floor(Math.random()*5)+1;
 var timer1 = 0;
 var timer2 = 0;
 
-
-	
 function setSlide(slidenr){
 		clearTimeout(timer1);
 		clearTimeout(timer2);
@@ -29,4 +27,11 @@ function changeSlide(){
 	/*timer1 = setTimeout("changeSlide()", 5000);
 	timer2 = setTimeout("hide()", 45000);*/
 	
+}
+
+var datePicker = document.getElementById("datePicker");
+
+function setDate(){
+	const element = document.getElementById('datePicker');
+	element.valueAsNumber = Date.now()-(new Date()).getTimezoneOffset()*60000;
 }

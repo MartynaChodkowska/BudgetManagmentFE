@@ -22,7 +22,7 @@ body{
 	margin-right: auto;
 	width: 1200px;
 	text-align: center;
-	padding: 15px;
+	padding: 10px;
 }
 
 h1.logo
@@ -31,7 +31,6 @@ h1.logo
 	font-size: 58px;
 	opacity: 0.9;
 	width: 100%;
-	padding: 10px 0;
 }
 
 #topnav
@@ -66,10 +65,8 @@ h1.logo
 .menu > li
 {
 	display: inline-block;
-	height: 40px;
-	width: 35px;
-	padding-left: 20px;
-	padding-right: 20px;
+	height: 35px;
+	padding: 0 15px;
 	border-right: 1px dashed #4b4b4b;
 	
 }
@@ -81,7 +78,7 @@ h1.logo
 
 .menu > li:last-child
 {
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .menu > li:hover
@@ -110,9 +107,10 @@ h1.logo
 {
 	width: 180px;
 	display: inline-block;
-	padding: 20px;
-	font-size: 14px;
+	padding-left: 15px;
+	font-size: 13.5px;
 	text-align: left;
+	margin: 0;
 }
 
 .east ul
@@ -136,11 +134,13 @@ h1.logo
 
 input[type="text"],
 input[type="password"],
+input[type="date"],
 input[type="email"]{
 	width: 300px;
+	height: 38px;
 	background-color: #D3D3D3;
 	opacity: 0.8;
-	color: gray;
+	color: black;
 	border: 2px solid #ddd;
 	border-radius: 5px;
 	padding: 7px;
@@ -150,6 +150,7 @@ input[type="email"]{
 
 input[type="text"]:focus,
 input[type="password"]:focus,
+input[type="date"]:focus,
 input[type="email"]:focus{
 	-webkit-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
 	-moz-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
@@ -160,6 +161,7 @@ input[type="email"]:focus{
 
 input[type="submit"]{
 	width: 300px;
+	height: 38px;
 	background-color: #DAA520;
 	color: #2F4F4F;
 	font-size: 20px;
@@ -177,7 +179,7 @@ input[type="submit"]:focus{
 	box-shadow: 3px 3px 3px 2px rgba(120,115,84,1);}
 
 input[type="submit"]:hover{
-	background-color: #DBA421;}
+	background-color: #E2D033;}
 
 #registration{
 	display: inline-block;
@@ -185,15 +187,18 @@ input[type="submit"]:hover{
 	height: 350px;
 }
 
-#login{
+#login
+{
 	display: inline-block;
 	width: 40%;
 	height: 350px;
 }
 
-#empty{
+#empty
+{
 	cursor: default;
-	opacity: 0;}
+	opacity: 0;
+}
 
 #or{
 	display: inline-block;
@@ -235,4 +240,130 @@ input[type="submit"]:hover{
 	font-weight: 400;}
 
 
+input[type="date"]{
+	width: 300px;
+	height: 38px;
+	background-color: #D3D3D3;
+	opacity: 0.8;
+	color: black;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	padding: 7px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
 
+input[type="date"]:focus{
+	-webkit-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	-moz-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	border: 2px solid #B8860B;
+	background-color: #DEB887;
+	color: #2F4F4F;}
+	
+input[type="reset"]{
+	width: 300px;
+	margin-left: 50px;
+	background-color: #DAA520;
+	color: #2F4F4F;
+	font-size: 20px;
+	padding: 7px 5px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;}
+
+input[type="reset"]:focus{
+	-webkit-box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);
+	-moz-box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);
+	box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);}
+
+input[type="reset"]:hover{
+	background-color: #E27333;}
+	
+#addTransaction
+{
+	margin-top: 50px;
+}
+
+.row
+{
+	width: 320px;
+	display: inline-block;
+	margin: 13px 0;
+}
+
+
+.transactionHeader
+{
+	margin-bottom: 20x;
+	font-size: 24px;
+}
+
+#comment
+{
+	resize: none;
+	text-align: left;
+	border-radius: 5px;
+	background-color: #D3D3D3;
+	opacity: 0.8;
+	color: black;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	padding: 7px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+#comment:focus
+{
+	-webkit-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	-moz-box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	box-shadow: 3px 3px 5px 2px rgba(75,75,75,1);
+	border: 2px solid #B8860B;
+	background-color: #DEB887;
+	color: #2F4F4F;	
+}
+
+.buttons
+{
+	margin: 15px;
+	text-align: center;
+}
+
+#notRequired
+{
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+legend
+{
+	font-size: 18px;
+}
+
+#selectMenu
+{	
+	width: 300px;
+	height: 38px;
+	background-color: #D3D3D3;
+	opacity: 0.8;
+	color: black;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	padding: 7px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+footer
+{
+	text-align: right;
+	font-size:13px;
+	margin-right: 5px;
+}
