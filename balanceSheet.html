@@ -40,10 +40,95 @@
 		
 		<div class="west">
 			<main>
-				<article>	
-					
-				
+				<article>
+					<header>
+						<div class="articleHeader"><h2>Balance sheet review</h2></div>
+					</header>
+					<section>
+						<form>
+							<div class="row">
+								<label for="selectPeriod">period of time</label>
+								<select  id="selectPeriod" onchange="checkPeriod(this)">
+									<option value="1"selected>running month</option>
+									<option value="2">previous month</option>
+									<option value="3">running year</option>
+									<option value="4">custom</option>
+								</select>
+							</div>
+							
+							<div class="row" id="rowSelectDateVisible">
+									<legend>choose period of time</legend>
+									<label for="startBalanceDate" id="timePeriod">start date</label>
+									<label for="endBalanceDate" id="timePeriod">end date</label>
+									<input type="date" required id="startBalanceDate" min="01.01.2000" max="">
+									<input type="date" required id="endBalanceDate" min="01.01.2000" max="">
+							</div>
+						</form>
+					</section>
+					<section>
+						<table id="tableIncomes">
+							<tr>
+								<td colspan="2">Incomes Summary</td>
+							</tr>
+							<tr>
+								<td>cat 1</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 2</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 3</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 4</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td id="total" colspan="2"> 1234 PLN </td>
+							</tr>
+						</table>
 						
+						<table id="tableExpenses">
+							<tr>
+								<td colspan="2">Expenses Summary</td>
+							</tr>
+							<tr>
+								<td>cat 1</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 2</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 3</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td>cat 4</td>
+								<td>total</td>
+							</tr>
+							<tr>
+								<td id="total" colspan="2"> 1234 PLN </td>
+							</tr>
+						</table>
+					</section>
+					<section>
+							Result:
+						<div id="balanceResult">
+							1234 PLN	
+						</div>
+						<div id = "balanceResultComment">
+							Be careful!
+						</div>
+						<div id="chart">
+							This is how it looks like
+							<div class="piechart"></div>
+						</div>
+					</section>
 				</article>
 			</main>
 		</div>

@@ -119,3 +119,23 @@ function formatCurrency(input, blur) {
   caret_pos = updated_len - original_len + caret_pos;
   input[0].setSelectionRange(caret_pos, caret_pos);
 }
+
+
+var timePeriod = document.getElementById("selectPeriod");
+var chooseTimePeriod = document.getElementById("rowSelectDateInvisible");
+
+
+
+//var selectedOption = document.getElementById("selectPeriod").options[document.getElementById("selectPeriod").selectedIndex].value
+
+function checkPeriod()
+{
+	
+	if (timePeriod.value == 4) 
+	{
+		//alert("ok");
+		//chooseTimePeriod.css('opacity','1');
+	$(#chooseTimePeriod).addClass('rowSelectDateVisible');
+	$(#chooseTimePeriod).removeClass('rowSelectDateInvisible');
+	}
+}
