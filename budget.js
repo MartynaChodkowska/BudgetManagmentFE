@@ -121,21 +121,3 @@ function formatCurrency(input, blur) {
 }
 
 
-var timePeriod = document.getElementById("selectPeriod");
-var chooseTimePeriod = document.getElementById("rowSelectDateInvisible");
-
-
-
-//var selectedOption = document.getElementById("selectPeriod").options[document.getElementById("selectPeriod").selectedIndex].value
-
-function checkPeriod()
-{
-	
-	if (timePeriod.value == 4) 
-	{
-		//alert("ok");
-		//chooseTimePeriod.css('opacity','1');
-	$(#chooseTimePeriod).addClass('rowSelectDateVisible');
-	$(#chooseTimePeriod).removeClass('rowSelectDateInvisible');
-	}
-}
