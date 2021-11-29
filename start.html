@@ -63,7 +63,7 @@
 				</header>
 				
 				<div class="intro col-sm-12">
-					<div class="card-group">
+					<div class="card-deck">
 						<div class="card col-xs-12 col-lg-6 bg-piggy">
 							<img class="card-img-top my-2"  src="https://source.unsplash.com/1500/700"" alt="questionMarks">
 							<div class="card-body bg-piggy">
@@ -89,15 +89,21 @@
 							</div>
 						</div>
 					</div>	
-						<div class="card logCard col-12 bg-piggy">
+						<div class="card logCard col-12 bg-piggy mt-4">
 							<div class="card-body bg-piggy">
 								<h5 class="display-4 card-title my-3">let's start</h5>
 								<p class="card-text">
-									<div class="signin d-inline-block">
-										<input type="text" class="d-block" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
-										<input type="password" class="d-block" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'">
-										<input type="submit" class="mb-2" value="sign in">
-									</div>
+									<form id="logIn">
+										<div class="form-group">
+											<label for="userName"></label>
+											<input type="text" class="d-block col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
+										</div>
+										<div class="form-group">
+											<label for="password"></label>
+											<input type="password" class="d-block col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'">
+										</div>
+										<input type="submit" class="d-block col-sm-6 offset-sm-3 col-md-4 offset-md-4 col-lg-4 offset-lg-4 my-5" value="enter">
+									</form>
 									<hr>
 									<div class="goToRegistration d-block mt-4">
 										or click <a href="#">here</a> if you haven't signed up yet

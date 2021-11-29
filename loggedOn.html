@@ -40,12 +40,6 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-item">
 						<a class="nav-link" href="#"><i class="icon-home"></i> Home</a>
-					</li>
-					<li class="navbar-item">
-						<a class="nav-link" href="#"><i class="icon-login"></i> Sign in</a>
-					</li>	
-					<li class="navbar-item active">
-						<a class="nav-link" href="#"><i class="icon-spread"></i> Join us</a>
 					</li>					
 					<li class="navbar-item">
 						<a class="nav-link" href="#"><i class="icon-cog"></i> Settings</a>
@@ -54,49 +48,55 @@
 			</div>
 		</nav>
 	</header>
-			
-	<main>
-		<section>
+		
+	<main>	
+		<article>
 			<div class="container">
 				
-				<form id="registration">
-					<h3 class="my-3">Registration</h3>
-					<hr>
-					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-						<label for="userName">User name</label>
-						<input type="text" class="form-control d-block" id="userName" aria-descirbedby="userName" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
+				<div class="row mt-5 ml-5">
+					
+					<div class="buttons col-lg-8 bg-dark border border-secondary rounded-right">
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">A</div>add income
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">Y</div>add expense
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">k</div>display balance sheet
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">u</div>categories manager
+						</button>	
 					</div>
-					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-						<label for="firstName">First name</label>
-						<input type="text" class="form-control d-block" id="firstName" aria-descirbedby="firstName" placeholder="first name" onfocus="this.placeholder=''" onblur="this.placeholder='first name'">
-					</div>	
-					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-						<label for="emailAdress">Email adress</label>
-						<input type="email" class="form-control d-block" id="emailAdress" aria-desribedby="emailAdress" placeholder="email" onfocus="this.placeholder=''" onblur="this.placeholder='email'">
-						<small id="emailAdress" class="form-text">We'll never share your email with anyone else.</small>
-					<div>
-					<div class="form-group col-12 mt-2">
-						<label for="password">Password</label>
-						<input type="password" class="form-control d-block" id="password" aria-descirbedby="password" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'">
-					</div>
-					<div class="form-group col-12">
-						<label for="confirmPassword">Confirm password</label>
-						<input type="password" class="form-control d-block" id="confirmPassword" aria-descirbedby="confirmPassword" placeholder="confrim password" onfocus="this.placeholder=''" onblur="this.placeholder='confirm password'">
-					</div>
-					<div class="form-check mt-4">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Check me out</label>
-					</div>
-					<input type="submit" class="d-block col-12" value="register now!">
-				</form>
-
+					
+					<aside class="col-lg-4">
+						<h5>Transactions review</h5>
+						<ul>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add income</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add expense</a>
+						</ul>
+						<h5 class="mt-5">Balance sheets review</h5>
+						<ul>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">running month</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">previous month</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">running year</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">previous year</a></li>
+						</ul>
+						<h5 class="mt-5">Categories manager</h5>
+						<ul>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">categories review</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add category</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">delete category</a></li>
+						</ul>
+					</aside>
+							
+				</div>
 			</div>
-		</section>
-	</main>
-		
+		</article>
+	</main>	
 	
 	
-	</div>
 	<footer class="text-center mt-5">
 		<h6>Thanks for visiting me! &copy; All rights reserved</h6>
 	</footer>
@@ -108,6 +108,8 @@
 	<script src="jquery-3.6.0.min.js"></script>
 	<script src="budget.js"></script>
 
+
+	
 </body>
 
 
