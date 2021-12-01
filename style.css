@@ -16,15 +16,9 @@ body{
 	text-align: center;
 }
 
-
 .bg-piggy
 {
 	background-color: #73A580 !important;
-}
-
-.navbar
-{
-
 }
 
 .navbar-item a
@@ -65,17 +59,18 @@ p
 	color: gray;
 }
 
-.icon{
+.icon
+{
 	font-family: Bankwesen Regular;
 	font-size: 3rem;
-	font-weight: 400;}
-
+	font-weight: 400;
+}
 
 input[type="text"],
 input[type="password"],
 input[type="date"],
-input[type="email"]{
-
+input[type="email"]
+{
 	background-color: #D3D3D3;
 	opacity: 0.8;
 	color: 73A580;
@@ -83,18 +78,22 @@ input[type="email"]{
 	border-radius: 5px;
 	padding: 7px;
 	box-sizing: border-box;
-	outline: none;}
+	outline: none;
+}
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
-input[type="email"]:focus{
+input[type="email"]:focus
+{
 	-webkit-box-shadow: 3px 3px 5px 2px rgba(172,212,182,1);
 	-moz-box-shadow: 3px 3px 5px 2px rgba(172,212,182,1);
 	box-shadow: 3px 3px 5px 2px rgba(172,212,182,1);
-	border: 2px solid #3A6C47;}
+	border: 2px solid #3A6C47;
+}
 
-input[type="submit"]{
+input[type="submit"]
+{
 	background-color: #3A6C47;
 	color: #F0BCED;
 	font-size: 20px;
@@ -105,18 +104,24 @@ input[type="submit"]{
 	border-radius: 5px;
 	cursor: pointer;
 	letter-spacing: 2px;
-	outline: none;}
+	outline: none;
+}
 
-input[type="submit"]:focus{
+input[type="submit"]:focus
+{
 	-webkit-box-shadow: 3px 3px 3px 2px rgba(172,212,182,1);
 	-moz-box-shadow: 3px 3px 3px 2px rgba(172,212,182,1);
-	box-shadow: 3px 3px 3px 2px rgba(172,212,182,1);}
+	box-shadow: 3px 3px 3px 2px rgba(172,212,182,1);
+}
 
-input[type="submit"]:hover{
-background-color: #69B57D;}
+input[type="submit"]:hover
+{
+	background-color: #69B57D;
+}
 
 
-input[type="reset"]{
+input[type="reset"]
+{
 	width: 300px;
 	margin-left: 50px;
 	background-color: #DAA520;
@@ -129,27 +134,21 @@ input[type="reset"]{
 	font-weight: 700;
 	cursor: pointer;
 	letter-spacing: 2px;
-	outline: none;}
+	outline: none;
+}
 
-input[type="reset"]:focus{
+input[type="reset"]:focus
+{
 	-webkit-box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);
 	-moz-box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);
-	box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);}
+	box-shadow: 3px 3px 3px 2px rgba(238,133,72,1);
+}
 
-input[type="reset"]:hover{
-	background-color: #E27333;}
+input[type="reset"]:hover
+{
+	background-color: #E27333;
+}
 	
-#addTransaction
-{
-	margin-top: 50px;
-}
-
-.articleHeader
-{
-	margin-bottom: 20px;
-	font-size: 24px;
-}
-
 #comment
 {
 	resize: none;
@@ -175,12 +174,6 @@ input[type="reset"]:hover{
 	background-color: #DEB887;
 	color: #2F4F4F;	
 }
-/*
-.buttons
-{
-	margin: 15px;
-	text-align: center;
-}*/
 
 #notRequired
 {
@@ -188,15 +181,8 @@ input[type="reset"]:hover{
 	margin-top: 15px;
 }
 
-legend
-{
-	font-size: 18px;
-}
-
 #selectMenu
 {	
-	width: 300px;
-	height: 38px;
 	background-color: #D3D3D3;
 	opacity: 0.8;
 	color: black;
@@ -209,11 +195,8 @@ legend
 }
 
 
-
 #selectPeriod
 {	
-	width: 300px;
-	height: 38px;
 	background-color: #D3D3D3;
 	opacity: 0.8;
 	color: black;
@@ -230,80 +213,24 @@ legend
 	width: 320px;
 	margin: 13px 0;
 	opacity: 0;
-	display: inline-block;
+	display: none;
 	transition: all .3s ease-in-out;
 }
 
 #rowSelectDateVisible
 {
-	width: 320px;
 	margin: 13px 0;
 	opacity: 1;	
 	display: inline-block;
 	transition: all .3s ease-in-out;
 }
 
-#startBalanceDate,
-#endBalanceDate
+.piechart 
 {
-	width: 155px;
-	height: 30px;
-	margin: 0;
-	
-}
-
-#timePeriod
-{
-	width: 155px;
-	font-size: 12px;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-}
-
-table
-{
-	width: 400px;
-	display: inline-block;
-	font-size: 18px;
-	margin-top: 15px;
-}
-
-td
-{
-	width: 200px;
-	border: 1px dotted #D3D3D3;
-}
-
-#total
-{
-	text-align: right;
-	padding-right: 5px;
-	font-size: 20px;
-}
-
-#balanceResultComment
-{
-	color: red;
-	font-weight: 700;
-	margin: 15px;
-	
-	background-color: #D3D3D3;
-	opacity: 0.4;
-	color: 	#F1214B; /*or #9ACD32 */
-	border: 2px solid #ddd;
-	border-radius: 5px;
-	padding: 7px;
-	box-sizing: border-box;
-	outline: none;
-	margin-top: 10px;
-}
-
-.piechart {
 	display: block;
-	position: absolute;
-	width: 400px;
-	height: 400px;
+	position: relative;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	background-image: conic-gradient(
 		pink 70deg, 
@@ -311,12 +238,6 @@ td
 		orange 0);
 	display: flex;
     justify-content: center;
-    align-items: center;
-	margin-left: 250px;
-	margin-top: 20px;
 }
 
-#chart
-{
-	margin: 20px;
-}
+
