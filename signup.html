@@ -38,13 +38,13 @@
 			
 			<div class="collapse navbar-collapse" id="mainmenu">
 				<ul class="navbar-nav ml-auto">
-					<li class="navbar-item active">
+					<li class="navbar-item">
 						<a class="nav-link" href="#"><i class="icon-home"></i> Home</a>
 					</li>
 					<li class="navbar-item">
 						<a class="nav-link" href="#"><i class="icon-login"></i> Sign in</a>
 					</li>	
-					<li class="navbar-item">
+					<li class="navbar-item active">
 						<a class="nav-link" href="#"><i class="icon-spread"></i> Join us</a>
 					</li>					
 					<li class="navbar-item">
@@ -54,68 +54,49 @@
 			</div>
 		</nav>
 	</header>
-		
-	<main>	
-		<section class="west">
+			
+	<main>
+		<section>
 			<div class="container">
-				<header>
-					<h1  class="display-5 my-4">feed the piggy and become a master of your budget!</h1>
-				</header>
 				
-				<div class="intro col-sm-12">
-					<div class="card-deck">
-						<div class="card col-xs-12 col-lg-6 bg-piggy">
-							<img class="card-img-top my-2"  src="https://source.unsplash.com/1500/700"" alt="questionMarks">
-							<div class="card-body bg-piggy">
-								<p class="card-text">
-									<p>too little incomes, too little spendings?</p>
-									<p>too little incomes, too much spendings?</p>						
-									<p>too much spendings on the end of month?</p>
-									<p>too much incomes, too much spendings?</p>		
-									<p>too much incomes, too little spendings?<p/>
-									<p>too little of month left, too much spendings ahead?</p>
-								</p>
-							</div>
-						</div>		
-						<div class="card col-xs-12 col-lg-6 bg-piggy">
-							<img class="card-img-top my-2"  src="https://source.unsplash.com/1500/700" alt="headExplode">
-							<div class="card-body bg-piggy">
-								<h5 class="card-title">don't let your head explode. keep it simple!</h5>
-								<p class="card-text">let's make it the best possible way -
-									<span class="d-block">just right incomes,</span>
-									<span class="d-block">just right spendings</span>
-									<span class="d-block">and finally - savings.</span>
-								</p>
-							</div>
-						</div>
+				<form id="registration">
+					<h3 class="my-3">Registration</h3>
+					<hr>
+					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+						<label for="userName">User name</label>
+						<input type="text" class="form-control d-block" id="userName" aria-descirbedby="userName" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
+					</div>
+					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+						<label for="firstName">First name</label>
+						<input type="text" class="form-control d-block" id="firstName" aria-descirbedby="firstName" placeholder="first name" onfocus="this.placeholder=''" onblur="this.placeholder='first name'">
 					</div>	
-						<div class="card logCard col-12 bg-piggy mt-4">
-							<div class="card-body bg-piggy">
-								<h5 class="display-4 card-title my-3">let's start</h5>
-								<p class="card-text">
-									<form id="logIn">
-										<div class="form-group">
-											<label for="userName"></label>
-											<input type="text" class="d-block col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='username'">
-										</div>
-										<div class="form-group">
-											<label for="password"></label>
-											<input type="password" class="d-block col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'">
-										</div>
-										<input type="submit" class="d-block col-sm-6 offset-sm-3 col-md-4 offset-md-4 col-lg-4 offset-lg-4 my-5" value="enter">
-									</form>
-									<hr>
-									<div class="goToRegistration d-block mt-4">
-										or click <a href="#">here</a> if you haven't signed up yet
-									</div>
-								</p>
-							</div>
-						</div>
-							
-				</div>
+					<div class="form-group col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+						<label for="emailAdress">Email adress</label>
+						<input type="email" class="form-control d-block" id="emailAdress" aria-desribedby="emailAdress" placeholder="email" onfocus="this.placeholder=''" onblur="this.placeholder='email'">
+						<small id="emailAdress" class="form-text">We'll never share your email with anyone else.</small>
+					<div>
+					<div class="form-group col-12 mt-2">
+						<label for="password">Password</label>
+						<input type="password" class="form-control d-block" id="password" aria-descirbedby="password" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'">
+					</div>
+					<div class="form-group col-12">
+						<label for="confirmPassword">Confirm password</label>
+						<input type="password" class="form-control d-block" id="confirmPassword" aria-descirbedby="confirmPassword" placeholder="confrim password" onfocus="this.placeholder=''" onblur="this.placeholder='confirm password'">
+					</div>
+					<div class="form-check mt-4">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					</div>
+					<input type="submit" class="d-block col-12" value="register now!">
+				</form>
+
 			</div>
 		</section>
-	</main>	
+	</main>
+		
+	
+	
+	</div>
 	<footer class="text-center mt-5">
 		<h6>Thanks for visiting me! &copy; All rights reserved</h6>
 	</footer>
@@ -127,8 +108,6 @@
 	<script src="jquery-3.6.0.min.js"></script>
 	<script src="budget.js"></script>
 
-
-	
 </body>
 
 

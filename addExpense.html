@@ -1,21 +1,25 @@
 <!DOCTYPE HTML>
-<html lang="eng">
+<html lang="en">
 
 <head>
 	
 	<meta charset="UTF-8" />
-	<title>add expense</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" >
+	<title>master yout budget!</title>
 	
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/fontello.css"type="text/css" />
-
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&display=swap" rel="stylesheet">
+	
 	
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,41 +27,47 @@
 
 </head>
 
-<body onload="setDate()">
-	<div id='container'>
-
-		<header>
-			<h1 class="logo">Master your budget</h1>
-			<nav id="topnav">
-				<ul class="menu">
-					<li><a href="#"> <i class="icon-home"></i></a></li>
-					<li><a href="#"> <i class="icon-logout"></i></a></li>				
-					<li><a href="#"><i class="icon-cog"></i></a></li>
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-piggy navbar-expand-md py-1">
+			<a class="navbar-brand" href="#"><img src="img/pigybank1.jpg" width="52" alt="logo" class="d-inline-block align-bottom mr-2 ">feed the piggy</a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="navigation switcher">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="mainmenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="navbar-item">
+						<a class="nav-link" href="#"><i class="icon-home"></i> Home</a>
+					</li>					
+					<li class="navbar-item">
+						<a class="nav-link" href="#"><i class="icon-cog"></i> Settings</a>
+					</li>
 				</ul>
-			</nav>
-		</header>
+			</div>
+		</nav>
+	</header>
 		
-		
-		<div class="west">
-			<main>
-				<article>	
-					<header>
-						<div class="articleHeader"><h2>Transaction details</h2></div>
-					</header>
-					<form>							
-							<div class="row">
-								<legend>expense amount</legend>
-								<input type="text" name="currency-field" id="currency-field" value="" data-type="currency" placeholder="PLN 1,000" required>
+	<main>	
+		<article>
+			<div class="container">
+				<div class="row mx-auto">
+						
+					<div class="addTransaction col-lg-8 bg-dark border border-secondary rounded-right mt-5">
+						<h1 class="h3 col-12 mb-4"> transaction details</h1>
+						<form id="addIncome">
+							<div class="form-group col-6 offset-3">
+								<label for="currency-field">Expense amount</label>
+								<input type="text" class="form-control" name="currency-field" id="currency-field" value="" data-type="currency" placeholder="PLN 1,000" required>
 							</div>
-							
-							<div class="row">
-								<legend>expense date</legend>
-								<input type="date" required id="datePicker">
+							<div class="form-group col-6 offset-3">
+								<label for="datePicker">Expense date</label>
+								<input type="date" class="form-control" id="datePicker" required">
 							</div>
-							
-							<div class="row">
-								<legend>expense category</legend>
-								<select  id="selectMenu">
+							<div class="form-group col-6 offset-3">
+								<label for="selectMenu">Expense category</label>
+								<select id="selectMenu" name="selectMenu" class="form-control ">
 									<option value="1">house rent</option>
 									<option value="2">media fee</option>
 									<option value="3">credit</option>
@@ -67,75 +77,61 @@
 									<option value="7">cosmetics</option>
 									<option value="8">savings</option>
 									<option value="9">other</option>
-								</select>
-							</div>	
-							
-							<div class="row">
-								<legend>payment method</legend>
-								<select id="selectMenu">
-									<option value="1">cash</div>
-									<option value="2">credit card</div>
-									<option value="3" selected>debit card</div>
-								</select>
+								</select> 
 							</div>
-							
-							<div class="commentArea">
-								<legend id="notRequired">comments</legend>
-								<textarea name="comment" id="comment" rows="3" cols="80"></textarea>
-							</div>					
-							
-							<div class="buttons">
-								<input type="submit" value="Add" id="addTransaction">
-								<input type="reset" value="Cancel">
+							<div class="form-group col-6 offset-3">
+								<label for="comment">Comment</label>
+								<textarea name="comment" id="comment" rows="3" class="col-12"></textarea>
 							</div>
-											
-					</form>
-				</article>
-			</main>
-		</div>
-			
-		<div class="east">
-			<aside>
-				<nav>
-					<h3>Incomes review</h3>
+							<div class="form-group">
+								
+								<input type="submit" value="Add expense" class="d-inline-block col-4" >
+								<input type="reset" value="Cancel" class="d-inline-block col-4">
+							</div>
+						</form>
+					</div>
+						
+					<aside class="col-lg-4 mt-4">
+						<h5>Transactions review</h5>
 						<ul>
-							<li><a href="#">add income</a></li>
-							<li><a href="#">running month incomes</a></li>
-							<li><a href="#">previous month</a></li>
-							<li><a href="#">running year</a></li>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add income</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add expense</a>
 						</ul>
-					<h3>Expenses review</h3>
-					<ul>
-						<li><a href="#">add expense</a></li>
-						<li><a href="#">running month</a></li>
-						<li><a href="#">previous month</a></li>
-						<li><a href="#">running year</a></li>
-					</ul>
-					<h3>Balance sheets review</h3>
-					<ul>
-						<li><a href="#">running month</a></li>
-						<li><a href="#">previous month</a></li>
-						<li><a href="#">running year</a></li>
-						<li><a href="#">previous year</a></li>
-					</ul>
-					<h3>Categories manager</h3>
-					<ul>
-						<li><a href="#">categories review</a></li>
-						<li><a href="#">add category</a></li>
-						<li><a href="#">delete category</a></li>
-					</ul>
-				</nav>
-			</aside>
-		</div>
-		
-		<footer>
-			<h6>Thanks for visiting me! &copy; All rights reserved</h6>
-		</footer>
-		
-	</div>
-		
+						<h5 class="mt-5">Balance sheets review</h5>
+						<ul>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">running month</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">previous month</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">running year</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">previous year</a>
+						</ul>
+						<h5 class="mt-5">Categories manager</h5>
+						<ul>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">categories review</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add category</a>
+							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">delete category</a>
+						</ul>
+					</aside>
+							
+				</div>
+			</div>
+		</article>
+	</main>	
+	
+	
+	<footer class="text-center mt-5">
+		<h6>Thanks for visiting me! &copy; All rights reserved</h6>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
 	<script src="jquery-3.6.0.min.js"></script>
-	<script src="budget.js"></script>	
+	<script src="budget.js"></script>
+
+
 	
 </body>
+
+
 </html>

@@ -52,42 +52,25 @@
 	<main>	
 		<article>
 			<div class="container">
-				<div class="row mx-auto">
-						
-					<div class="addTransaction col-lg-8 bg-dark border border-secondary rounded-right mt-5">
-						<h1 class="h3 col-12 mb-4"> transaction details</h1>
-						<form id="addIncome">
-							<div class="form-group col-6 offset-3">
-								<label for="currency-field">Income amount</label>
-								<input type="text" class="form-control" name="currency-field" id="currency-field" value="" data-type="currency" placeholder="PLN 1,000" required>
-							</div>
-							<div class="form-group col-6 offset-3">
-								<label for="datePicker">Income date</label>
-								<input type="date" class="form-control" id="datePicker" required">
-							</div>
-							<div class="form-group col-6 offset-3">
-								<label for="selectMenu">Income category</label>
-								<select id="selectMenu" name="selectMenu" class="form-control ">
-									<option value="1" selected>salary</option>
-									<option value="2">bank interest</option>
-									<option value="3">selling</option>
-									<option value="4">bonus</option>
-									<option value="5">other</option>
-								</select> 
-							</div>
-							<div class="form-group col-6 offset-3">
-								<label for="comment">Comment</label>
-								<textarea name="comment" id="comment" rows="3" class="col-12"></textarea>
-							</div>
-							<div class="form-group">
-								
-								<input type="submit" value="Add income" class="d-inline-block col-4" >
-								<input type="reset" value="Cancel" class="d-inline-block col-4">
-							</div>
-						</form>
+				
+				<div class="row mt-5 mx-auto">
+					
+					<div class="buttons col-lg-8 bg-dark border border-secondary rounded-right">
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">A</div>add income
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">Y</div>add expense
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">k</div>display balance sheet
+						</button>
+						<button type="button" class="btn btn-outline-secondary col-sm-8 col-lg-4 m-4">
+							<div class="icon">u</div>categories manager
+						</button>	
 					</div>
-						
-					<aside class="col-lg-4 mt-4">
+					
+					<aside class="col-lg-4">
 						<h5>Transactions review</h5>
 						<ul>
 							<a href="#" class="list-group-item list-group-item-dark list-group-item-action">add income</a>
